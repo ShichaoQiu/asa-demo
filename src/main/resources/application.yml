@@ -1,8 +1,12 @@
 spring:
   application:
     name: asa-demo
-  config:
-    import: optional:configserver:http://localhost:8888/
+  cloud:
+    config:
+      name: asa-test
+      profile: prod
+  profiles:
+    active: dev
 management:
   endpoints:
     web:

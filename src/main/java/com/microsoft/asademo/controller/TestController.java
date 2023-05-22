@@ -15,7 +15,7 @@ public class TestController {
 
     @GetMapping("printLogs")
     public String printLogs(){
-        int totalLines = 10;
+        int totalLines = 100000;
         for (int i = 0; i < totalLines; i++) {
             log.info("asa demo test logs --- {}", i);
         }
